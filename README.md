@@ -1,8 +1,6 @@
-# RAG News Generation System
+# Congress News RAG Pipeline Generator
 
-**Author:** Aniket Tuli
-
-This project is a distributed, high-quality, high-throughput article generation system that produces Markdown-based news stories about U.S. congressional bills using structured data from the Congress.gov API.
+This is an open-source distributed article generation system that produces high-quality, Markdown-based news stories about U.S. congressional bills using structured data from the Congress.gov API.
 
 ## Architecture Overview
 
@@ -139,3 +137,7 @@ Contains all articles with metadata in a structured JSON format. Here is a snipp
 ### Markdown Files (`output/{bill_id}.md`)
 
 In addition to the JSON file, the system generates individual markdown files for each bill, named using the bill ID (e.g., `hr4313.md`, `s2318.md`). These files contain the article content in markdown format with proper formatting. Special characters such as newlines (`\n`), tabs (`\t`), and carriage returns (`\r`) are properly decoded and formatted in the markdown files, making them ready for direct viewing or further processing.
+
+## License
+
+This project is licensed under the MIT License.
